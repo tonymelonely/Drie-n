@@ -1,0 +1,20 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "composite": true,
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "outDir": "dist/server",
+    "noEmit": false,
+    "allowImportingTsExtensions": false,
+    "types": ["node"]
+  },
+  "include": [
+    "src/server/**/*",
+    "src/types/**/*",
+    "src/utils/deck.ts",
+    "src/utils/gameInitializer.ts",
+    "src/utils/network/**/*"
+  ],
+  "exclude": ["node_modules"]
+}
